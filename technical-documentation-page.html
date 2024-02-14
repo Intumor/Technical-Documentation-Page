@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is a short overview of some CSS Basics">
+    <title>Technical Documentation Page</title>
+    <link rel="stylesheet" href="technical-documentation-page.css">
+  </head>
+  <body>
+    <main id="main-doc">
+      <nav id="navbar">
+        <header>
+          <h1>CSS Documentation</h1>
+        </header>
+        <ul class="navbar-list">
+          <a class="nav-link" href="#What_is_CSS"><li>What is CSS?</li></a>
+          <a class="nav-link" href="#CSS_Syntax"><li>CSS Syntax</li></a>
+          <a class="nav-link" href="#CSS_Selectors"><li>CSS Selectors</li></a>
+          <a class="nav-link" href="#How_To_Add_CSS"><li>How To Add CSS</li></a>
+          <a class="nav-link" href="#CSS_Comments"><li>CSS Comments</li></a>
+          <a class="nav-link" href="#CSS_Colors"><li>CSS Colors</li></a>
+          <a class="nav-link" href="#CSS_Backgrounds"><li>CSS Backgrounds</li></a>
+          <a class="nav-link" href="#CSS_Borders"><li>CSS Borders</li></a>
+          <a class="nav-link" href="#CSS_Margins"><li>CSS Margins</li></a>
+        </ul>
+      </nav>
+
+      <div class="section-box">
+        <section class="main-section" id="What_is_CSS">
+          <header>
+            <h2>What is CSS?</h2>
+          </header>
+          <ul>
+            <li>CSS stands for Cascading Style Sheets</li>
+            <li>CSS describes how HTML elements are to be displayed on screen, paper, or in other media</li>
+            <li>CSS saves a lot of work. It can control the layout of multiple web pages all at once</li>
+            <li>External stylesheets are stored in CSS files</li>
+          </ul>
+        </section>
+        <section class="main-section" id="CSS_Syntax">
+          <header>
+            <h2>CSS Syntax</h2>
+          </header>
+          <p>
+            A CSS rule consists of a selector and a declaration block.The selector points to the HTML element you want to style.The declaration block contains one or more declarations separated by semicolons. Each declaration includes a CSS property name and a value, separated by a colon.Multiple CSS declarations are separated with semicolons, and declaration blocks are surrounded by curly braces.
+          </p>
+          <p>
+            In this example all elements will be center-aligned, with a red text color:
+          </p>
+          <code class="code">
+            <span class="selector-css">p</span> {<br>
+            <span class="indent"><span class="property">color:</span> <span class="value-red">red</span><span class="semi-colon">;</span></span><br>
+            <span class="indent"><span class="property">text-align:</span> <span class="value-red">center</span><span class="semi-colon">;</span></span><br>
+           }
+          </code>
+        </section>
+        <section class="main-section" id="CSS_Selectors">
+          <header>
+            <h2>CSS Selectors</h2>
+          </header>
+          <p>
+            CSS selectors are used to "find" (or select) the HTML elements you want to style.
+            We can divide CSS selectors into five categories:
+          </p>
+          <ul>
+            <li>Simple selectors (select elements based on name, id, class)</li>
+            <li>Combinator selectors (select elements based on a specific relationship between them)</li>
+            <li>Pseudo-class selectors (select elements based on a certain state)</li>
+            <li>Pseudo-elements selectors (select and style a part of an element)</li>
+            <li>Attribute selectors (select elements based on an attribute or attribute value)</li>
+          </ul>
+          <p><a href="https://www.w3schools.com/css/css_selectors.asp">This page</a> will explain the most basic CSS selectors.</p>
+        </section>
+        <section class="main-section" id="How_To_Add_CSS">
+          <header>
+            <h2>How To Add CSS</h2>
+          </header>
+          <p>
+            When a browser reads a style sheet, it will format the HTML document according to the information in the style sheet.
+            There are three ways of inserting a style sheet:
+          </p>
+          <ul>
+            <li>External CSS</li>
+            <li>Internal CSS</li>
+            <li>Inline CSS</li>
+          </ul>
+          <h3>External CSS</h3>
+          <p>
+            With an external style sheet, you can change the look of an entire website by changing just one file!
+          </p>
+          <p>
+            Each HTML page must include a reference to the external style sheet file inside the <span class="in-text-tag">&lt;link&gt;</span> element, inside the head section.
+          </p>
+          <h3>Internal CSS</h3>
+          <p>
+            An internal style sheet may be used if one single HTML page has a unique style.
+          </p>
+          <p>
+            The internal style is defined inside the <span class="in-text-tag">&lt;style&gt;</span> element, inside the head section.
+          </p>
+          <h3>Inline CSS</h3>
+          <p>
+            An inline style may be used to apply a unique style for a single element.
+          </p>
+          <p>
+            To use inline styles, add the style attribute to the relevant element. The style attribute can contain any CSS property.
+          </p>
+        </section>
+        <section class="main-section" id="CSS_Comments">
+          <header>
+            <h2>CSS Comments</h2>
+          </header>
+          <p>
+            Comments are used to explain the code, and may help when you edit the source code at a later date.
+            Comments are ignored by browsers.
+            A CSS comment is placed inside the <span class="in-text-tag">&lt;style&gt;</span> element, and starts with <span class="in-text-tag">/*</span> and ends with <span class="in-text-tag">*/</span>:
+          </p>
+          <code>
+            <span class="comment-css">/* This is a single-line comment */</span><br><br>
+            <span class="selector-css">p</span> {<br>
+            <span class="indent"><span class="property">color:</span> <span class="value-red">red</span><span class="semi-colon">;</span></span><br> }
+          </code>
+        </section>
+        <section class="main-section" id="CSS_Colors">
+          <header>
+            <h2>CSS Colors</h2>
+          </header>
+          <p>
+            Colors are specified using predefined color names, or RGB, HEX, HSL, RGBA, HSLA values.
+          </p>
+          <p>In CSS, a color can be specified by using a predefined color name:</p>
+          <div class="color-grid">
+            <div class="color tomato">Tomato</div>
+            <div class="color orangered">Orangered</div>
+            <div class="color yellow">Yellow</div>
+            <div class="color blueviolet">Blueviolet</div>
+            <div class="color pink">Pink</div>
+            <div class="color grey">Grey</div>
+            <div class="color brown">Brown</div>
+            <div class="color green">Green</div>
+          </div>
+          <h3 class="example">Example:</h3>
+          <code class="code">
+            &lt;<span class="selector-css">h1 </span><span class="property">style=</span><span class="value-red">"background-color:blue;"</span>&gt;<span class="white-code">Hello World</span>&lt;/h1&gt;<br>
+
+            &lt;<span class="selector-css">p </span><span class="property">style=</span><span class="value-red">"background-color:Tomato;"</span>&gt;<span class="white-code">Lorem ipsum...</span>&lt;/p&gt;
+          </code>
+          <div class="example-text">
+            <p class="changed-header">Hello World</p>
+            <p class="changed-text">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+        </section>
+        <section class="main-section" id="CSS_Backgrounds">
+          <header>
+            <h2>CSS Backgrounds</h2>
+          </header>
+          <p>
+            The CSS background properties are used to add background effects for elements.
+          </p>
+          <p>The background-color property specifies the background color of an element.</p>
+          <p>The background color of a page is set like this:</p>
+          <code>
+            <span class="selector-css">body</span> {<br>
+              <span class="indent"><span class="property">background-color:</span> <span class="value-red">lightblue</span><span class="semi-colon">;</span></span><br>
+             }
+          </code>
+          <p>With CSS, a color is most often specified by:</p>
+          <ul>
+            <li>a valid color name - like "red"</li>
+            <li>a HEX value - like "#ff0000"</li>
+            <li>an RGB value - like "rgb(255,0,0)"</li>
+          </ul>
+          <p>Look at CSS Color Values for a complete list of possible color values.</p>
+        </section>
+        <section class="main-section" id="CSS_Borders">
+          <header>
+            <h2>CSS Borders</h2>
+          </header>
+          <p>
+            The CSS border properties allow you to specify the style, width, and color of an element's border.
+          </p>
+          <p class="border border-full">I have borders on all sides.</p>
+          <p class="border border-bottom">I have a red bottom border.</p>
+          <p class="border border-rounded">I have rounded borders.</p>
+          <p class="border border-left">I have a blue left border.</p>
+          <h3>CSS Border Style</h3>
+          <p>
+            The border-style property specifies what kind of border to display.<br>
+            he following values are allowed:
+          </p>
+          <ul>
+            <li><span class="value-red">dotted</span> - Defines a dotted border</li>
+            <li><span class="value-red">dashed</span> - Defines a dashed border</li>
+            <li><span class="value-red">solid</span> - Defines a solid border</li>
+            <li><span class="value-red">double</span> - Defines a double border</li>
+            <li><span class="value-red">groove</span> - Defines a 3D grooved border. The effect depends on the border-color value</li>
+            <li><span class="value-red">ridge</span> - Defines a 3D ridged border. The effect depends on the border-color value</li>
+            <li><span class="value-red">inset</span> - Defines a 3D inset border. The effect depends on the border-color value</li>
+            <li><span class="value-red">outset</span> - Defines a 3D outset border. The effect depends on the border-color value</li>
+            <li><span class="value-red">none</span> - Defines no border</li>
+            <li><span class="value-red">hidden</span> - Defines a hidden border</li>
+          </ul>
+          <p>The <span class="property">border-style</span> property can have from one to four values (for the top border, right border, bottom border, and the left border).</p>
+          <h3>Example</h3>
+          <p>Demonstration of the different border styles:</p>
+          <div class="code-box">
+            <code>
+              <span class="selector-css">p.dotted</span> {<span><span class="property">border-style:</span> <span class="value-red">dotted</span><span class="semi-colon">;</span></span>}
+            </code>
+            <code>
+              <span class="selector-css">p.dashed</span> {<span><span class="property">border-style:</span> <span class="value-red">dashed</span><span class="semi-colon">;</span></span>}
+            </code>
+            <code>
+              <span class="selector-css">p.solid</span> {<span><span class="property">border-style:</span> <span class="value-red">solid</span><span class="semi-colon">;</span></span>}
+            </code>
+            <code>
+              <span class="selector-css">p.double</span> {<span><span class="property">border-style:</span> <span class="value-red">double</span><span class="semi-colon">;</span></span>}
+            </code>
+            <code>
+              <span class="selector-css">p.groove</span> {<span><span class="property">border-style:</span> <span class="value-red">groove</span><span class="semi-colon">;</span></span>}
+            </code>
+            <code>
+              <span class="selector-css">p.ridge</span> {<span><span class="property">border-style:</span> <span class="value-red">ridge</span><span class="semi-colon">;</span></span>}
+            </code>
+            <code>
+              <span class="selector-css">p.inset</span> {<span><span class="property">border-style:</span> <span class="value-red">inset</span><span class="semi-colon">;</span></span>}
+            </code>
+            <code>
+              <span class="selector-css">p.outset</span> {<span><span class="property">border-style:</span> <span class="value-red">outset</span><span class="semi-colon">;</span></span>}
+            </code>
+            <code>
+              <span class="selector-css">p.none</span> {<span><span class="property">border-style:</span> <span class="value-red">none</span><span class="semi-colon">;</span></span>}
+            </code>
+            <code>
+              <span class="selector-css">p.hidden</span> {<span><span class="property">border-style:</span> <span class="value-red">hidden</span><span class="semi-colon">;</span></span>}
+            </code>
+            <code>
+              <span class="selector-css">p.mix</span> {<span><span class="property">border-style:</span> <span class="value-red">dotted dashed solid double</span><span class="semi-colon">;</span></span>}
+            </code>
+          </div>
+          <p>Result:</p>
+          <p class="border dotted">A dotted border.</p>
+          <p class="border dashed">A dashed border.</p>
+          <p class="border solid">A solid border.</p>
+          <p class="border double">A double border.</p>
+          <p class="border groove">A groove border. The effect depends on the border-color value.</p>
+          <p class="border ridge">A ridge border. The effect depends on the border-color value.</p>
+          <p class="border inset">An inset border. The effect depends on the border-color value.</p>
+          <p class="border outset">An outset border. The effect depends on the border-color value.</p>
+          <p class="border none">No border.</p>
+          <p class="border hidden">A hidden border.</p>
+          <p class="border mixed">A mixed border.</p>
+        </section>
+        <section class="main-section" id="CSS_Margins">
+          <header>
+            <h2>CSS Margins</h2>
+          </header>
+          <p>
+            Margins are used to create space around elements, outside of any defined borders.
+          </p>
+          <p class="margin-box"><span class="margined-element">This element has a margin of 70px.</span></p>
+          <h3>CSS Margins</h3>
+          <p>
+            The CSS margin properties are used to create space around elements, outside of any defined borders. <br>
+            With CSS, you have full control over the margins. There are properties for setting the margin for each side of an element (top, right, bottom, and left).
+          </p>
+          <h3>Margin - Individual Sides</h3>
+          <p>CSS has properties for specifying the margin for each side of an element:</p>
+          <ul>
+            <li><span class="property">margin-top</span></li>
+            <li><span class="property">margin-right</span></li>
+            <li><span class="property">margin-bottom</span></li>
+            <li><span class="property">margin-left</span></li>
+          </ul>
+          <p>All the margin properties can have the following values:</p>
+          <ul>
+            <li><span class="value-red">auto</span> - the browser calculates the margin</li>
+            <li><span class="value-red">length</span> - specifies a margin in px, pt, cm, etc.</li>
+            <li><span class="value-red">%</span> - specifies a margin in % of the width of the containing element</li>
+            <li><span class="value-red">inherit</span> - specifies that the margin should be inherited from the parent element</li>
+          </ul>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
