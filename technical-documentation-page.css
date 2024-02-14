@@ -22,3 +22,17 @@
 .section-box {
   margin: 0 0 0 24%;
 }
+
+@media screen and (max-width: 690px) {
+  #navbar {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+  }
+
+  .section-box {
+    margin: 0 0 0 0;
+  }
+}
