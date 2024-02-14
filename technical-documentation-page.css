@@ -3,3 +3,22 @@
     scroll-behavior: smooth;
   }
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#navbar {
+  background-color: aqua;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 24%;
+}
+
+.section-box {
+  margin: 0 0 0 24%;
+}
