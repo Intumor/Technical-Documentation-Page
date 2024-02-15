@@ -68,6 +68,15 @@ p {
   font-size: 1.7rem;
 }
 
+code {
+  background-color: rgb(61, 61, 61);
+  display: block;
+  width: auto;
+  font-size: 20px;
+  padding: 16px;
+  max-width: 500px;
+  margin: 1.5rem 4rem 3rem 6%;
+}
 
 @media screen and (max-width: 950px) {
   #navbar {
@@ -100,6 +109,10 @@ p {
 
   .section-box {
     margin: 20px 0 0 0;
+  }
+
+  code {
+    margin: 1.5rem 1rem 3rem 6%;
   }
 }
 
