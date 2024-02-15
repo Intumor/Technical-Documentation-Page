@@ -163,6 +163,20 @@ h3 {
   background-color: green;
 }
 
+.example-text {
+  margin: 4%;
+}
+
+.changed-header {
+  background-color: blue;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.changed-text {
+  background-color:tomato;
+}
+
 .border {
   margin: 1.7rem 1.7rem 1.7rem 1.7rem;
 }
