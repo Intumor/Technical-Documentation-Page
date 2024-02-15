@@ -78,6 +78,11 @@ code {
   margin: 1.5rem 4rem 3rem 6%;
 }
 
+h3 {
+  font-size: 2.2rem;
+  margin: 2% 0 2% 1.6%;
+}
+
 @media screen and (max-width: 950px) {
   #navbar {
     position: relative;
