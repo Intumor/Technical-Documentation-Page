@@ -313,23 +313,23 @@ h3 {
   }
 
   h2 {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
 
   .main-section ul {
-    font-size: 1.0rem;
+    font-size: 1.2rem;
   }
 
   p {
     padding: 1rem 2rem 1rem 1.6rem;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
   
   code {
-    font-size: 13px;
+    font-size: 16px;
   }
   
   h3 {
-    font-size: 1.7rem;
+    font-size: 1.9rem;
   }
 }
