@@ -67,6 +67,14 @@ h2 {
   line-height: 30px;
 }
 
+#CSS_Selectors a {
+  color: rgb(86, 84, 255);
+}
+
+#CSS_Selectors a:hover {
+  color: rgb(86, 84, 255);
+  text-decoration: underline;
+}
 
 p {
   padding: 1rem 2rem 1rem 1.6rem;
@@ -301,7 +309,7 @@ h3 {
 
   .main-section ul {
     font-size: 1.4rem;
-    padding: 1rem 1rem 1rem 3rem;
+    padding: 1rem 1rem 1rem 2.9rem;
   }
 
   p {
